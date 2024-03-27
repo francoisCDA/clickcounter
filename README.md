@@ -1,5 +1,13 @@
-# docker command to build 
 
+# clone depot
+```
+git clone https://github.com/francoisCDA/clickcounter.git 
+cd counterclic
+```
+
+
+
+# docker build 
 ```
 docker build -t counterclic .
 ```
