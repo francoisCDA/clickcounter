@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nginx test</title>
+    <style>
+        .container {
+            background-color: aqua;
+            width: 90vw;
+            height: 90vh;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            & button {
+                font-size: larger;
+                padding: 20px;
+                border-radius: 100%;
+            }
+
+            & button:hover {
+                background-color: blue;
+                color: red;
+                font-weight: 900;
+                text-transform:uppercase;
+            }
+        }
+        h1 {
+            background-color: orange;
+            padding: 2%;
+            border-radius: 12px;
+            border: 7px solid red;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <h1 id="titre" >Hello httpd !!!</h1>
+        <div>
+            <button id="clic" onclick="getAlert()">Clic !</button>
+        </div>
+    </div>
+    
+    <script>
+        const title = document.getElementById("titre");
+        let compt = 0;
+
+      
+        function getAlert() {
+            compt++;
+            title.innerHTML ="Clics : "+ compt  +" !";
+        }
+        
+    </script>
+
+</body>
+</html>
